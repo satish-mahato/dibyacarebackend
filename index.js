@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json()); // Parse JSON bodies
 app.use(cors()); // Enable CORS
 
-// Utility function for error handling
+// Utility function for error handlingg
 function handleError(res, error, customMessage) {
   console.error(customMessage, error);
   res.status(500).send({ msg: customMessage, error: error.message });
